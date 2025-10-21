@@ -1,8 +1,9 @@
+import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
-    <div className="">
+    <Container className="">
       <h2>home</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
@@ -15,7 +16,7 @@ const Home = () => {
       </p>
 
       <Button>check it out</Button>
-    </div>
+    </Container>
   );
 };
 
