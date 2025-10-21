@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const Home = () => {
   return (
     <div className="">
@@ -11,6 +13,8 @@ const Home = () => {
         asperiores perferendis voluptatibus dolore recusandae, laudantium ea
         delectus.
       </p>
+
+      <Button>check it out</Button>
     </div>
   );
 };
