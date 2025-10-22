@@ -4,6 +4,7 @@ import { X } from "lucide-react";
 import { headerData } from "@/constants/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import SocialMedia from "./SocialMedia";
 interface SideBarProps {
   isOpen: boolean;
   onClose: () => void;
@@ -41,6 +42,8 @@ const SideMenu: FC<SideBarProps> = ({ isOpen, onClose }) => {
             </Link>
           ))}
         </div>
+
+        <SocialMedia />
       </div>
     </div>
   );
