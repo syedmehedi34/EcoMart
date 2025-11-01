@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="font-poppins antialiased">
+        <body className="font-poppins antialiased" suppressHydrationWarning>
           <Header />
 
           {children}
