@@ -16,6 +16,7 @@ const Footer = () => {
           <div></div>
         </div>
         {/*  */}
+        {/*  */}
       </Container>
     </footer>
   );
