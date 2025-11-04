@@ -19,4 +19,14 @@ const Title = ({
   );
 };
 
-export { Title };
+const SubText = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return <p className={cn("text-gray-600 text-sm", className)}>{children}</p>;
+};
+
+export { Title, SubText };
