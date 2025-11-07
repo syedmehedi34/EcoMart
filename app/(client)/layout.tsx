@@ -31,11 +31,3 @@ export default function RootLayout({
     </ClerkProvider>
   );
 }
-
-/*
-use:   sanity for data management  
-use:   next-sanity package for easy integration with Next.js
-npm:   npx sanity@latest init
-web link: https://www.npmjs.com/package/next-sanity
-
-*/
