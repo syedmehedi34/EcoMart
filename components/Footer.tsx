@@ -79,6 +79,14 @@ const Footer = () => {
           </div>
         </div>
         {/*  */}
+
+        {/* bottom footer title */}
+        <div className="py-6 border-t text-center text-sm text-gray-600">
+          <div>
+            &copy; {new Date().getFullYear()} <Logo className="text-sm" />. All
+            rights reserved.
+          </div>
+        </div>
       </Container>
     </footer>
   );
