@@ -160,8 +160,6 @@ export const orderType = defineType({
       currency: "currency",
       orderId: "orderNumber",
       email: "email",
-      status: "status",
-      paymentStatus: "paymentStatus",
     },
     prepare(select) {
       const orderIdSnippet = `${select.orderId.slice(
@@ -169,26 +167,9 @@ export const orderType = defineType({
         5
       )}...${select.orderId.slice(-5)}`;
 
-      // Format status for display
-      const statusMap: Record<string, string> = {
-        pending: "🟠 Pending",
-        processing: "🔵 Processing",
-        paid: "🟢 Paid",
-        shipped: "🚚 Shipped",
-        out_for_delivery: "📦 Out for Delivery",
-        delivered: "✅ Delivered",
-        cancelled: "❌ Cancelled",
-      };
-
-      const statusDisplay = statusMap[select.status] || select.status;
-      const paymentDisplay =
-        select.paymentStatus === "paid"
-          ? "💳 Paid"
-          : "💰 " + select.paymentStatus;
-
       return {
         title: `${select.name} (${orderIdSnippet})`,
-        subtitle: `${statusDisplay} | ${select.amount} ${select.currency} | ${paymentDisplay}`,
+        subtitle: `${select.amount} ${select.currency}, ${select.email}`,
         media: BasketIcon,
       };
     },
