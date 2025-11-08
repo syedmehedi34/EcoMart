@@ -12,13 +12,13 @@ import { productType } from "./productType";
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
     categoryType,
-    addressType,
-    authorType,
-    blockContentType,
-    blogCategoryType,
-    blogType,
-    brandType,
     productType,
     orderType,
+    brandType,
+    blogCategoryType,
+    blogType,
+    blockContentType,
+    authorType,
+    addressType,
   ],
 };
